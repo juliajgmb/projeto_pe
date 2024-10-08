@@ -31,4 +31,5 @@ typedef struct{
 } tRegistroCliente;
 
 tRegistroCliente RegistraCliente(void);
+void LocarBrinquedo(tRegistroCliente *cliente);
 #endif

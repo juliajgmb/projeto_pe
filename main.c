@@ -9,7 +9,7 @@ int main()
 	setlocale(LC_ALL, "Portuguese");
 	tRegistroCliente clientes[10];
 	int clientesRegistrados = 0;
-	int menu;
+	int menu, i;
 	
 	while(1){
 	printf("\t~ MENU PIMPLAY ~\n");
@@ -35,6 +35,17 @@ int main()
 		printf(".");
 		sleep(1);
 		system("cls");
+	}
+	else if (menu == 3){
+		 int codigo;
+            printf("Informe o código do cliente: ");
+            scanf("%d", &codigo);
+            for (i = 0; i < clientesRegistrados; i++) {
+                if (clientes[i].codigo == codigo) {
+                    LocarBrinquedo(&clientes[i]);
+                    break;
+                }
+            }
 	}
 	else if(menu == 6)
 		break;
