@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <locale.h>
 #include "dFuncStruct.h"
-#include "ClientesBrinquedosAlocados.h"
+#include "ClientesBrinquedosLocados.h"
 
 int main()
 {
@@ -54,7 +54,7 @@ int main()
 		}
 		else if(menu == 5)
 		{
-			BrinquedosAlocadosClientes(clientes, clientesRegistrados);
+			BrinquedosLocadosClientes(clientes, clientesRegistrados);
 		}
 		else if(menu == 6)
 			break;

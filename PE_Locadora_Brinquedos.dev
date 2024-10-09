@@ -91,7 +91,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit5]
-FileName=ClientesBrinquedosAlocados.c
+FileName=ClientesBrinquedosLocados.c
 CompileCpp=0
 Folder=
 Compile=1
@@ -101,7 +101,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit6]
-FileName=ClientesBrinquedosAlocados.h
+FileName=ClientesBrinquedosLocados.h
 CompileCpp=0
 Folder=
 Compile=1

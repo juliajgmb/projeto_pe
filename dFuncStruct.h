@@ -32,6 +32,6 @@ typedef struct{
 
 tRegistroCliente RegistraCliente(void);
 void LocarBrinquedo(tRegistroCliente *cliente);
-void BrinquedosAlocadosClientes(tRegistroCliente clientes[], int clientesRegistrados);
+void BrinquedosLocadosClientes(tRegistroCliente clientes[], int clientesRegistrados);
 void exibirclientes(tRegistroCliente clientes[],int ClientesRegistrados);
 #endif
