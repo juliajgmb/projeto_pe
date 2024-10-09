@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <locale.h>
 #include "dFuncStruct.h"
-#include "exibirClientesBrinquedosAlocados.h"
+#include "ClientesBrinquedosAlocados.h"
 
 int main()
 {
@@ -15,12 +15,12 @@ int main()
 		printf("\t~ MENU PIMPLAY ~\n");
 		printf("\n  Cadastrar Novo Cliente (1)");
 		printf("\n  Clientes Cadastrados (2)");
-		printf("\n  Locação de Brinquedos (3)");
-		printf("\n  Devolução de Brinquedos (4)");
-		printf("\n  Locações Atuais (5)");
+		printf("\n  Locaï¿½ï¿½o de Brinquedos (3)");
+		printf("\n  Devoluï¿½ï¿½o de Brinquedos (4)");
+		printf("\n  Locaï¿½ï¿½es Atuais (5)");
 		printf("\n  Sair (6)");
 	
-		printf("\n\nInforme qual função deseja utilizar: ");
+		printf("\n\nInforme qual funï¿½ï¿½o deseja utilizar: ");
 		scanf("%d",&menu);
 	
 		if(menu == 1){
@@ -36,9 +36,14 @@ int main()
 			sleep(1);
 			system("cls");
 		}
+		else if (menu == 2)
+		{
+			printf("registro de clientes:\n");
+			exibirclientes(clientes,clientesRegistrados);
+		}
 		else if (menu == 3){
 			int codigo;
-	        printf("Informe o código do cliente: ");
+	        printf("Informe o cï¿½digo do cliente: ");
 	        scanf("%d", &codigo);
             for (i = 0; i < clientesRegistrados; i++) {
                 if (clientes[i].codigo == codigo) {
