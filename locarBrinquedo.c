@@ -17,7 +17,7 @@ void LocarBrinquedo(tRegistroCliente *cliente) {
     scanf("%d", &quantidade);
 
     // Verifica se a quantidade é válida
-    if (quantidade < 1 || quantidade > MAX_BRINQUEDOS - cliente->numLoc) {
+    if (quantidade < 1 || quantidade + cliente->numLoc > MAX_BRINQUEDOS ) {
         printf("Quantidade inválida! Você pode locar até %d brinquedos.\n", MAX_BRINQUEDOS - cliente->numLoc);
         return;
     }
