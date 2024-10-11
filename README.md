@@ -5,7 +5,7 @@ Este projeto implementa um sistema de gerenciamento para a locadora de brinquedo
 
 
 ### Autores: 
-Daniele Reis, Geovanna, Bruno e Júlia Gabriele
+Daniele Reis, Geovanna, Matheus Bruno e Júlia Gabriele
 
 ### Ferramentas
 ![C](https://img.shields.io/badge/C-3670A0?style=for-the-badge&logo=C&logoColor=ffdd54) 
