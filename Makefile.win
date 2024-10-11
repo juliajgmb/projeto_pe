@@ -4,14 +4,14 @@
 CPP      = g++.exe
 CC       = gcc.exe
 WINDRES  = windres.exe
-OBJ      = main.o registraCliente.o locarBrinquedo.o ClientesBrinquedosLocados.o
-LINKOBJ  = main.o registraCliente.o locarBrinquedo.o ClientesBrinquedosLocados.o
+OBJ      = main.o registraCliente.o locarBrinquedo.o ClientesBrinquedosAlocados.o devolucaoBrinquedo.o exibirClientes.o
+LINKOBJ  = main.o registraCliente.o locarBrinquedo.o ClientesBrinquedosAlocados.o devolucaoBrinquedo.o exibirClientes.o
 LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
 INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
 CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
 BIN      = PE_Locadora_Brinquedos.exe
-CXXFLAGS = $(CXXINCS) -std=c99
-CFLAGS   = $(INCS) -std=c99
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
 RM       = rm.exe -f
 
 .PHONY: all all-before all-after clean clean-custom
@@ -33,5 +33,11 @@ registraCliente.o: registraCliente.c
 locarBrinquedo.o: locarBrinquedo.c
 	$(CC) -c locarBrinquedo.c -o locarBrinquedo.o $(CFLAGS)
 
-ClientesBrinquedosLocados.o: ClientesBrinquedosLocados.c
-	$(CC) -c ClientesBrinquedosLocados.c -o ClientesBrinquedosLocados.o $(CFLAGS)
+ClientesBrinquedosAlocados.o: ClientesBrinquedosAlocados.c
+	$(CC) -c ClientesBrinquedosAlocados.c -o ClientesBrinquedosAlocados.o $(CFLAGS)
+
+devolucaoBrinquedo.o: devolucaoBrinquedo.c
+	$(CC) -c devolucaoBrinquedo.c -o devolucaoBrinquedo.o $(CFLAGS)
+
+exibirClientes.o: exibirClientes.c
+	$(CC) -c exibirClientes.c -o exibirClientes.o $(CFLAGS)

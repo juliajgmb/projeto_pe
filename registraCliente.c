@@ -30,7 +30,7 @@ tRegistroCliente RegistraCliente(void){
 	printf("Informe o dia de nascimento do cliente: ");
 	scanf("%d",&novoCliente.dataNascimento.dia);
 	
-	printf("nforme o mês de nascimento do cliente: ");
+	printf("Informe o mês de nascimento do cliente: ");
 	scanf("%d",&novoCliente.dataNascimento.mes);
 	
 	printf("Informe o ano de nascimento do cliente: ");
@@ -56,7 +56,7 @@ tRegistroCliente RegistraCliente(void){
 	novoCliente.numLoc = 0;
 	novoCliente.brinquedosLoc = 0;
 	
-	printf("\n\t~ CLIENTE CADASTRADO COM SUCESSO ~");
+	printf("\n\t~ CLIENTE CADASTRADO COM SUCESSO ~\n");
 	
 	return novoCliente;
 };
